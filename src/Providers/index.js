@@ -1,6 +1,11 @@
+import { DetalhesProvider } from "./detalhes";
 import { ModalProvider } from "./modal";
 
 const Provider = ({ children }) => {
-  return <ModalProvider>{children}</ModalProvider>;
+  return (
+    <DetalhesProvider>
+      <ModalProvider>{children}</ModalProvider>
+    </DetalhesProvider>
+  );
 };
 export default Provider;

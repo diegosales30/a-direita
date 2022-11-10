@@ -1,10 +1,10 @@
 import styles from "./styles.module.scss";
 import ContentBrasil from "./../ContentBrasil/index";
 
-const Main = () => {
+const Main = ({ saida }) => {
   return (
     <div className={styles.container}>
-      <ContentBrasil />
+      <ContentBrasil saida={saida} />
     </div>
   );
 };

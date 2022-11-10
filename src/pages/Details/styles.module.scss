@@ -1,0 +1,264 @@
+.container {
+  width: 100vw;
+  height: calc(100vh - 7rem);
+}
+
+.containerContent {
+  max-width: 1120px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+
+  flex-direction: column;
+  a {
+    margin-left: 5px;
+    width: 70px;
+    .btn {
+      display: flex;
+      font-size: 0.9rem;
+      margin-left: 8px;
+      align-items: center;
+      justify-content: start;
+      &:hover {
+        transform: translateY(-0.1rem);
+      }
+    }
+  }
+}
+.content {
+  overflow-y: auto;
+}
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .titulo {
+    display: flex;
+
+    img {
+      width: 32rem;
+      height: 20rem;
+      border-radius: 5px;
+    }
+    .blocoTexto {
+      h1 {
+        width: 20rem;
+        font-size: 2rem;
+        margin-left: 10px;
+      }
+      .bloco {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          font-size: 0.7rem;
+          margin-left: 10px;
+        }
+        a {
+          display: flex;
+          width: 100px;
+          .fonte {
+            width: 150px;
+
+            color: rgba(12, 37, 224, 0.712);
+          }
+        }
+      }
+    }
+  }
+}
+
+.description {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  max-width: 850px;
+  margin-bottom: 10px;
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .conteudo {
+    .titulo {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      .blocoTexto {
+        text-align: center;
+        width: 100%;
+
+        h1 {
+          margin: auto;
+
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .conteudo {
+    .titulo {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      img {
+        width: 28rem;
+        height: 20rem;
+      }
+      .blocoTexto {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        h1 {
+          margin: auto;
+
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .conteudo {
+    .titulo {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      img {
+        width: 27rem;
+        height: 17rem;
+      }
+      .blocoTexto {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        h1 {
+          text-align: center;
+          width: 270px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 390px) {
+  .conteudo {
+    .titulo {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      img {
+        width: 25rem;
+        height: 17rem;
+      }
+      .blocoTexto {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        h1 {
+          margin: auto;
+
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 350px) {
+  .conteudo {
+    .titulo {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      img {
+        width: 22rem;
+        height: 14rem;
+      }
+      .blocoTexto {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        h1 {
+          margin: auto;
+
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .conteudo {
+    .titulo {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      img {
+        width: 20rem;
+        height: 12rem;
+      }
+      .blocoTexto {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        h1 {
+          margin: auto;
+
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 300px) {
+  .conteudo {
+    .titulo {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      img {
+        width: 20rem;
+        height: 12rem;
+      }
+      .blocoTexto {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        h1 {
+          margin: auto;
+
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 288px) {
+  .conteudo {
+    .titulo {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      img {
+        width: 20rem;
+        height: 12rem;
+      }
+      .blocoTexto {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        h1 {
+          margin: auto;
+
+          text-align: center;
+        }
+      }
+    }
+  }
+}
