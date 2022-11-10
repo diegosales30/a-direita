@@ -9,12 +9,12 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .container {
     display: flex;
     button {
       margin-top: 20px;
-      margin-right: 5px;
+      margin-right: 10px;
       font-size: 1.5rem;
       color: white;
     }

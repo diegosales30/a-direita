@@ -1,0 +1,85 @@
+.container {
+  max-width: 1120px;
+  margin: auto;
+  height: calc(100vh - 3rem);
+
+  .title {
+    margin: auto;
+    font-size: 1.9rem;
+    color: #586e26d5;
+    font-weight: 700;
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+    font-family: "Play", sans-serif;
+
+    font-family: "Playfair Display", serif;
+  }
+}
+
+.containerBox {
+  padding: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.boxContent {
+  width: 290px;
+  height: 288px;
+  border-radius: 3px;
+  margin: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.256);
+  background-color: white;
+  .box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    img {
+      border-radius: 2px;
+      width: 270px;
+      height: 180px;
+    }
+    h1 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-left: 5px;
+      color: #484d50e6;
+      height: 75px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: wrap;
+      direction: ltr;
+    }
+  }
+  .box2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    span {
+      font-size: 0.7rem;
+
+      text-align: center;
+
+      font-weight: 100;
+    }
+    .span1 {
+      margin-left: 5px;
+      //color: #767676;
+      color: #b0b0b0;
+      font-size: 0.6rem;
+    }
+    .span2 {
+      margin-right: 5px;
+      color: white;
+      background-color: #c71515e7;
+      padding: 2px;
+      border-radius: 1px;
+      cursor: pointer;
+    }
+  }
+}
