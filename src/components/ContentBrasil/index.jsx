@@ -18,7 +18,7 @@ const ContentBrasil = ({ saida }) => {
           {saida?.map((news) => (
             <li className={styles.boxContent} key={news.id}>
               <div className={styles.box1}>
-                <img src={news.image} alt="img" />
+                <img src={news.image1} alt="img" />
                 <h1>{news.titulo}</h1>
               </div>
               <div className={styles.box2}>

@@ -2,19 +2,19 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 
 const firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyC8LUvaUzezF4OYygH_9kny0fd3nbvaRvA",
+  apiKey: "AIzaSyCob0zIwinydFErGl4LHCKQpsH0l_gZGfo",
 
-  authDomain: "brasilagora-bc85a.firebaseapp.com",
+  authDomain: "direitaapp.firebaseapp.com",
 
-  projectId: "brasilagora-bc85a",
+  projectId: "direitaapp",
 
-  storageBucket: "brasilagora-bc85a.appspot.com",
+  storageBucket: "direitaapp.appspot.com",
 
-  messagingSenderId: "237081311389",
+  messagingSenderId: "566866818089",
 
-  appId: "1:237081311389:web:3b1050d9f87da597783c74",
+  appId: "1:566866818089:web:3b507218f301cdd4129838",
 
-  measurementId: "G-HV7KEMXGS0",
+  measurementId: "G-G3RX0Z6STL",
 });
 
 // Initialize Firebase
