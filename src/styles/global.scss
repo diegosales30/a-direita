@@ -19,6 +19,8 @@
 }
 body {
   background: #fff url(../assets/back.png) repeat-x;
+
+  overflow-y: auto;
 }
 body,
 input,

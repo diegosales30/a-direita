@@ -2,7 +2,7 @@ import Main from "./../../components/Main/index";
 import { format } from "date-fns";
 import db from "../../services/firebaseConnection";
 import { useEffect, useState } from "react";
-
+import styles from "./styles.module.scss";
 const BrasilPage = () => {
   const [saida, setSaida] = useState();
 
@@ -27,9 +27,9 @@ const BrasilPage = () => {
       });
   }, []);
   return (
-    <>
+    <div className={styles.container}>
       <Main saida={saida} />
-    </>
+    </div>
   );
 };
 export default BrasilPage;

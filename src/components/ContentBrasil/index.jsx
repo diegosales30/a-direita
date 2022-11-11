@@ -1,11 +1,7 @@
 import { useNavigate, generatePath } from "react-router-dom";
 import styles from "./styles.module.scss";
-import { useState, useContext } from "react";
-import { DetalhesContext } from "./../../Providers/detalhes/index";
 
 const ContentBrasil = ({ saida }) => {
-  const { setData } = useContext(DetalhesContext);
-
   const navigate = useNavigate();
 
   const handleClick = (id) => {
@@ -27,20 +23,7 @@ const ContentBrasil = ({ saida }) => {
               </div>
               <div className={styles.box2}>
                 <span className={styles.span1}>{news.createdFormat}</span>
-                <button
-                  onClick={() =>
-                    handleClick(
-                      news.id,
-                      setData({
-                        titulo: news?.titulo,
-                        descricao: news.desc,
-                        image: news.image,
-                        created: news.created,
-                        createdFormat: news.createdFormat,
-                      })
-                    )
-                  }
-                >
+                <button onClick={() => handleClick(news.id)}>
                   <span className={styles.span2}>ler mais...</span>
                 </button>
               </div>

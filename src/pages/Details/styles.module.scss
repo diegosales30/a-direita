@@ -1,6 +1,6 @@
 .container {
-  width: 100vw;
-  height: calc(100vh - 7rem);
+  width: 100%;
+  height: 100%;
 }
 
 .containerContent {
@@ -25,9 +25,7 @@
     }
   }
 }
-.content {
-  overflow-y: auto;
-}
+
 .conteudo {
   display: flex;
   flex-direction: column;
