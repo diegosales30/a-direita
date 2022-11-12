@@ -1,17 +1,17 @@
 import { useNavigate, generatePath } from "react-router-dom";
 import styles from "./styles.module.scss";
 
-const ContentBrasil = ({ saida }) => {
+const ContentMundo = ({ saida }) => {
   const navigate = useNavigate();
 
   const handleClick = (id) => {
-    const path = generatePath("/details-brasil/" + id);
+    const path = generatePath("/details-mundo/" + id);
     return navigate(path);
   };
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>BRASIL</h1>
+      <h1 className={styles.title}>MUNDO</h1>
 
       <section className={styles.list}>
         <ul className={styles.containerBox}>
@@ -43,4 +43,4 @@ const ContentBrasil = ({ saida }) => {
 //   createdFormat: news.createdFormat,
 // })
 
-export default ContentBrasil;
+export default ContentMundo;

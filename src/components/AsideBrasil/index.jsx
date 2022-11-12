@@ -1,11 +1,14 @@
-import Main from "./../../components/Main/index";
+import styles from "./styles.module.scss";
+import { useNavigate, generatePath } from "react-router-dom";
+
 import { format } from "date-fns";
 import db from "../../services/firebaseConnection";
 import { useEffect, useState } from "react";
-import styles from "./styles.module.scss";
-const BrasilPage = () => {
+
+const AsideBrasil = () => {
   const [saida, setSaida] = useState();
   console.log(saida);
+  const navigate = useNavigate();
 
   useEffect(() => {
     db.collection("brasil")
@@ -30,10 +33,24 @@ const BrasilPage = () => {
       });
   }, []);
 
+  const handleClick = (id) => {
+    const path = generatePath("/details-brasil/" + id);
+    return navigate(path);
+  };
   return (
     <div className={styles.container}>
-      <Main saida={saida} />
+      <h2>Brasil</h2>
+      <section className={styles.content}>
+        <ul>
+          {saida?.map((br) => (
+            <li key={br?.id} onClick={() => handleClick(br?.id)}>
+              <img src={br?.image1} alt="" />
+              <h5>{br?.titulo}</h5>
+            </li>
+          ))}
+        </ul>
+      </section>
     </div>
   );
 };
-export default BrasilPage;
+export default AsideBrasil;

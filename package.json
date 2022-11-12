@@ -1,7 +1,21 @@
 {
   "name": "a-direita",
   "version": "0.1.0",
-  "private": true,
+  "author": {
+    "name": "Diego Felipe",
+    "email": "diego.sales19@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "direita",
+    "direita-news",
+    "direita noticias",
+    "a direita",
+    "la direita",
+    "jornal",
+    "noticia online",
+    "site direita"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",

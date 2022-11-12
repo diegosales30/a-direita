@@ -18,7 +18,7 @@ const ModalMenu = () => {
           <li onClick={() => handleNavigation("/")}>Brasil</li>
           <li onClick={() => handleNavigation("/mundo")}>Mundo</li>
           {/* <li onClick={() => handleNavigation("/governo")}>Governo</li> */}
-          <li onClick={() => handleNavigation("/contato")}>Contato</li>
+          {/* <li onClick={() => handleNavigation("/contato")}>Contato</li> */}
         </ul>
       ) : null}
     </div>
