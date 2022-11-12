@@ -24,7 +24,7 @@ const ContentBrasil = ({ saida }) => {
               <div className={styles.box2}>
                 <span className={styles.span1}>{news.createdFormat}</span>
                 <button onClick={() => handleClick(news.id)}>
-                  <span className={styles.span2}>ler mais...</span>
+                  <span className={styles.span2}>ler mais</span>
                 </button>
               </div>
             </li>

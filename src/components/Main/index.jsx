@@ -5,7 +5,7 @@ import Aside from "./../Aside/index";
 const Main = ({ saida }) => {
   return (
     <div className={styles.container}>
-      <Aside />
+      <Aside saida={saida} />
       <ContentBrasil saida={saida} />
     </div>
   );

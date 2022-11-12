@@ -1,12 +1,66 @@
 .container {
-  width: 30%;
+  width: 40%;
   height: 70%;
-  background-color: rgb(205, 201, 201);
 
-  margin-top: 65px;
+  box-shadow: 1px 1px 5px 1px rgba(150, 150, 150, 0.235);
+  margin-left: 15px;
+  margin-top: 63px;
+
+  border-radius: 5px;
+  h2 {
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 3px 3px 0 0;
+    font-weight: 700;
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+    font-family: "Play", sans-serif;
+
+    font-family: "Playfair Display", serif;
+    background-color: #586e26d5;
+  }
 }
 
-@media screen and (max-width: 660px) {
+.content {
+  box-shadow: 1px 1px 5px 1px rgba(150, 150, 150, 0.235);
+
+  height: calc(100% - 2.5rem);
+  overflow-y: auto;
+  padding: 5px;
+
+  ul {
+    li {
+      margin-top: 10px;
+      box-shadow: 1px 1px 5px 1px rgba(150, 150, 150, 0.235);
+      height: 70px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      img {
+        width: 75px;
+        height: 55px;
+        border-radius: 50;
+      }
+      h5 {
+        margin-left: 10px;
+        font-size: 0.8rem;
+
+        font-weight: 600;
+
+        color: #262626e6;
+        height: 55px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: wrap;
+        direction: ltr;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 676px) {
   .container {
     display: none;
   }
